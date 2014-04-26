@@ -74,7 +74,6 @@ recipes:
 #     -
 #       - sprout-wrap
 #       - https://github.com/pivotal-sprout/sprout-wrap.git
-=======
 - personal::without_mouse_locator
 - sprout-osx-apps::emacs
 node_attributes:
