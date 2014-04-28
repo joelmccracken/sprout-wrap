@@ -1,3 +1,32 @@
+# (my sprout wrap readme)
+
+clone this repo
+
+install chef omnibus 
+
+````
+curl -LO https://www.opscode.com/chef/install.sh
+sudo bash install.sh
+````
+
+install things necessary for this repo:
+
+````
+unset GEM_HOME
+unset GEM_PATH
+export PATH="/opt/chef/embedded/bin:$PATH"
+sudo gem install soloist
+sudo gem install bundler
+sudo gem install librarian-chef
+bundle install
+librarian-chef install
+bundle exec soloist
+````
+
+^^ the above did not work, so moving to chef solo w/ librarian &
+sprout cookbooks.
+
+
 # sprout-wrap
 
 [![Build Status](https://travis-ci.org/pivotal-sprout/sprout-wrap.png?branch=master)](https://travis-ci.org/pivotal-sprout/sprout-wrap)
